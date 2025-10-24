@@ -127,6 +127,7 @@ const App = () => {
               brandLogo={elem.brandLogo}
               pay={elem.pay}
               tag2={elem.tag2}
+              location={elem.location}
             />
           </div>
         );
