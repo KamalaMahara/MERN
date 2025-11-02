@@ -3,20 +3,26 @@ import heroImg from "../assets/NotesLekh.png";
 
 function Hero() {
   return (
-    <div className="bg-[#ECF4E8] px-2 sm:px-4 pt-8 pb-10 md:pt-12 md:pb-24 min-h-screen w-full">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <div className="bg-[#ECF4E8] px-2 sm:px-4 pt-8 pb-4 md:pt-12 md:pb-24 min-h-7xl w-full">
+      <div className="max-w-7xl mx-20 my-4 grid grid-cols-1 md:grid-cols-2  items-center">
         {/* Right Section (Logo First on Mobile) */}
         <div className="order-1 md:order-2 flex justify-center items-center">
-          <img
-            src={heroImg}
-            alt="NotesLekh Banner"
-            className="max-w-full h-auto drop-shadow-[0_0_10px_rgba(0,255,255,0.4)]"
-          />
+          <div>
+            <button className="bg-amber-200 rounded-full size-4"></button>
+            <button className="bg-blue-300 rounded-full size-4"></button>
+            <button className="bg-amber-200 rounded-full size-4"></button>
+            <button className="bg-amber-200 rounded-full size-4"></button>
+            <img
+              src={heroImg}
+              alt="NotesLekh Banner"
+              className="max-w-scren-full h-7xl drop-shadow-[0_0_10px_rgba(0,255,255,0.4)]"
+            />
+          </div>
         </div>
 
         {/* Left Section (Text Second on Mobile) */}
-        <div className="order-2 md:order-1 p-4 sm:p-4">
-          <div className="rounded-full bg-[#adeaed] w-fit px-4 py-2 font-bold text-[#276266] animate-bounce text-center text-sm sm:text-base">
+        <div className="order-2 md:order-1 p-4 sm:p-">
+          <div className="rounded-full bg-[#adeaed] w-fit px-4 py-2 mt-4 font-bold text-[#276266]  text-center text-sm sm:text-base">
             ✨Welcome to the future of note-taking.
           </div>
 
@@ -62,6 +68,20 @@ function Hero() {
               Sync across devices
             </p>
           </div>
+        </div>
+      </div>
+      <div className=" min-h-24 mt-10 flex justify-center items-center ">
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 512"
+            fill="none"
+            stroke="#59E7F2"
+            strokeWidth="20"
+            className="w-14 h-14 animate-bounce "
+          >
+            <path d="M224 0H160C71.6 0 0 71.6 0 160v192c0 88.4 71.6 160 160 160h64c88.4 0 160-71.6 160-160V160C384 71.6 312.4 0 224 0zM192 32c35.3 0 64 28.7 64 64v64h-64V32zm160 320c0 70.7-57.3 128-128 128h-64C89.3 480 32 422.7 32 352V160C32 89.3 89.3 32 160 32h32v128h160v192z" />
+          </svg>
         </div>
       </div>
     </div>
