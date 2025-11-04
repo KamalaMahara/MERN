@@ -30,7 +30,7 @@ const Section1 = () => {
   ];
 
   return (
-    <div className="min-h-screen min-w-full bg-[#e9f3ee]">
+    <div className="min-h-6xl min-w-full bg-[#e9f3ee]">
       {/* Header Section */}
       <div className="above flex flex-col justify-center items-center pt-12">
         <h1>
@@ -39,7 +39,7 @@ const Section1 = () => {
             Creative Minds
           </span>
         </h1>
-        <div className="text-center mt-5 text-xl font-sans mx-auto max-w-2xl">
+        <div className="text-center mt-5 text-xl font-medium mx-auto max-w-2xl">
           <p>
             Join thousands of creators, writers, and thinkers who trust
             NotesLekh to keep their ideas safe and organized.
@@ -48,7 +48,7 @@ const Section1 = () => {
       </div>
 
       {/* Cards Section */}
-      <div className="below grid sm:grid-cols-1   md:grid-cols-2  lg:grid-cols-4 gap-4 mt-12 mx-24 p-6 ">
+      <div className="below grid sm:grid-cols-1   md:grid-cols-2  lg:grid-cols-4 gap-4 mt-12 mx-24 p-6  ">
         {user.map((elem, idx) => (
           <Card1
             key={idx}
