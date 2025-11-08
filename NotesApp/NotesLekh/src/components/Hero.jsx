@@ -82,7 +82,7 @@ function Hero() {
           >
             <path d="M224 0H160C71.6 0 0 71.6 0 160v192c0 88.4 71.6 160 160 160h64c88.4 0 160-71.6 160-160V160C384 71.6 312.4 0 224 0zM192 32c35.3 0 64 28.7 64 64v64h-64V32zm160 320c0 70.7-57.3 128-128 128h-64C89.3 480 32 422.7 32 352V160C32 89.3 89.3 32 160 32h32v128h160v192z" />
           </svg> */}
-          <i className="fa-solid fa-hand-pointer text-4xl text-[#e1b555] animate-bounce "></i>
+          <i className="fa-solid fa-hand-pointer text-4xl text-[#477fe8] animate-bounce "></i>
         </div>
       </div>
     </div>
