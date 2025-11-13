@@ -1,19 +1,10 @@
-import React from "react";
-
-function FeatureCard(props) {
-  return (
-    <div className="container  h-[200px] w-[380px] border  rounded-3xl shadow shadow-gray-500 p-4 flex flex-col justify-start items-center gap-2">
-      <div className="flex flex-row justify-start items-center gap-4 w-full  ">
-        <button className="h-[72px] w-[72px] bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 text-xl rounded-2xl border border-purple-500 flex justify-center items-center">
-          {props.icon}
-        </button>
-        <span className="font-bold text-2xl">{props.feature}</span>
-      </div>
-      <div className="w-full mt-2 font-semibold text-center text-gray-700 text-base ">
-        <p>{props.slogan}</p>
-      </div>
+const FeatureCard = ({ icon, feature, slogan }) => (
+  <div className="p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-[1.02] border border-gray-100 flex flex-col items-start space-y-3 h-full">
+    {/* Inline SVG Icon */}
+    <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-purple-50 text-purple-600 text-2xl mb-2">
+      {icon}
     </div>
-  );
-}
-
-export default FeatureCard;
+    <h3 className="text-xl font-bold text-[#0a1e5e]">{feature}</h3>
+    <p className="text-gray-500 text-base">{slogan}</p>
+  </div>
+);

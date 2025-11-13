@@ -1,7 +1,5 @@
 import React from "react";
 
-// Removed Font Awesome imports to fix compilation errors
-
 // 1. Placeholder for the FeatureCard component (Must be in the same file)
 const FeatureCard = ({ icon, feature, slogan }) => (
   <div className="p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-[1.02] border border-gray-100 flex flex-col items-start space-y-3 h-full">
